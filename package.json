@@ -1,0 +1,28 @@
+{
+  "name": "ask-the-audience",
+  "version": "1.0.0",
+  "description": "Polling app for learning WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorhuertas/ask-the-audience.git"
+  },
+  "keywords": [
+    "poll",
+    "websockets"
+  ],
+  "author": "Hector Huertas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hectorhuertas/ask-the-audience/issues"
+  },
+  "homepage": "https://github.com/hectorhuertas/ask-the-audience#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "lodash": "^4.11.1",
+    "socket.io": "^1.4.5"
+  }
+}
