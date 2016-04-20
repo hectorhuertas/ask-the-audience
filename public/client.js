@@ -10,3 +10,13 @@ socket.on('statusMessage', function(message){
   console.log(message);
   statusMessage.innerText = message;
 });
+
+var buttons = document.querySelectorAll('#choices button');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', buttonClick);
+}
+
+function buttonClick(){
+  console.log(this.innerText);
+  socket.send('voteCast', this.innerText);
+}
